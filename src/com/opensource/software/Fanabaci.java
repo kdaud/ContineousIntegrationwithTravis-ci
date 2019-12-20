@@ -1,5 +1,6 @@
 package com.opensource.software;
 
+import java.math.BigInteger;
 import java.util.Scanner;
 
 public class Fanabaci {
@@ -7,29 +8,32 @@ public class Fanabaci {
 	/**
 	 * kdaud
 	 */
-	static {
-		System.out.println("Fanabaci Sequence");
-	}
 	public static void main(String[] args) {
 		
-		//Auto-generated codes
-		System.out.println("Type in index of fibbonaci sequence:");
+		System.out.println("Type in index of fibonacci sequence:");
 		
 		int seq = 0;
 		Scanner sc = new Scanner(System.in);
+		
 		seq = sc.nextInt();
 		
-		System.out.println(fib(seq));
-	}
-	
-	public static int fib(int n) {
-		if (n == 0)
-			return 0;
-		else if (n == 1)
-			return 1;
+		if (seq < 2000)
+			System.out.println(fibo(seq));
 		else
-			return fib(n - 1) + fib(n - 2);
-		
+			System.out.println("Input Error");
 	}
 	
+	public static BigInteger fibo(int n) {
+		
+		BigInteger num1 = new BigInteger("0");
+		BigInteger num2 = new BigInteger("1");
+		
+		for (int i = 1; i < n; i++) {
+			BigInteger sum;
+			sum = num1.add(num2);
+			num1 = num2;
+			num2 = sum;
+		}
+		return num1;
+	}
 }
