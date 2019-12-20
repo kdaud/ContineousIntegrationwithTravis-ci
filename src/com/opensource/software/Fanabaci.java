@@ -4,6 +4,9 @@ import java.util.Scanner;
 
 public class Fanabaci {
 	
+	static {
+		System.out.println("Fanabaci Sequence");
+	}
 	public static void main(String[] args) {
 		
 
