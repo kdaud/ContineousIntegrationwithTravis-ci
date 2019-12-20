@@ -2,3 +2,22 @@ language: java
 jdk:
   - jdk8
 
+language: java
+jdk:
+ - openjdk8
+script: mvn clean install --batch-mode
+matrix:
+    - jdk: openjdk8
+branches:
+  only:
+    - master
+after_success:
+  - mvn jacoco:report coveralls:report
+notifications:
+  email: false
+  irc:
+    channels:
+      - "irc.freenode.org#openmrs"
+    template:
+      - "%{repository}#%{build_number} (%{branch} - %{commit} : %{author}): %{m$
+      - "Change view : %{compare_url}"
