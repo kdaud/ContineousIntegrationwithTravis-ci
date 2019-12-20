@@ -12,7 +12,7 @@ public class Fanabaci {
 	}
 	public static void main(String[] args) {
 		
-
+		//Auto-generated codes
 		System.out.println("Type in index of fibbonaci sequence:");
 		
 		int seq = 0;
