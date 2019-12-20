@@ -4,6 +4,9 @@ import java.util.Scanner;
 
 public class Fanabaci {
 	
+	/**
+	 * kdaud
+	 */
 	static {
 		System.out.println("Fanabaci Sequence");
 	}
