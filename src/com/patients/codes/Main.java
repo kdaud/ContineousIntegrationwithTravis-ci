@@ -16,6 +16,12 @@ public class Main {
 		System.out.println(obj.getDate());
 		System.out.println(Math.subtractExact(17, 7));
 		System.out.println("Am volunteering with OpenMRS");
+		sum(40, 42);
+	}
+	
+	public static void sum(int c, int u) {
+		System.out.println(c + u);
+		System.out.println(Math.sin(90));
 	}
 	
 }
