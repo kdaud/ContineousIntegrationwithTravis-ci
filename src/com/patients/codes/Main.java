@@ -12,6 +12,7 @@ public class Main {
 		Maths obj = new Maths();
 		obj.setDate(new Date());
 		System.out.println(obj.getDate());
+		System.out.println(Math.subtractExact(17, 7));
 	}
 	
 }
