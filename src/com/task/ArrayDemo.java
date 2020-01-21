@@ -10,9 +10,10 @@ public class ArrayDemo {
 		
 		System.out.println("Enter the number of arrays:");
 		int number =scanner.nextInt();
-		int [] midsem = new int[number];
-		int [] endsem = new int[number];
-		int [] finalmark = new int(number);
+		for (int i = 0; i < number; i++) {
+			System.out.println("Enter the number at index " + i + ": ");
+			scanner.nextInt();
+		}
 		
 	}
 	
