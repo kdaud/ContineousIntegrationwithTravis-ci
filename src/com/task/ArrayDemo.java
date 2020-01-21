@@ -20,6 +20,7 @@ public class ArrayDemo {
 			System.out.println("Enter the number at index " + j + ": ");
 			scanner.nextInt();
 		}
+		System.out.println("Computing Final Mark");
 	}
 	
 }
