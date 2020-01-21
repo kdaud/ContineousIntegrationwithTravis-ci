@@ -6,10 +6,19 @@ public class ArrayDemo {
 	
 	private Scanner scanner = new Scanner(System.in);
 	
+	int number = scanner.nextInt();
+	
+	int[] midsem = new int[number];
+	
+	int[] endsem = new int[number];
+	
+	int[] finalmark = new int[number];
+	
 	private void gciover() {
 		
+		
 		System.out.println("Enter the number of arrays:");
-		int number =scanner.nextInt();
+		
 		System.out.println("Enter the Array Element of the first set:");
 		for (int i = 0; i < number; i++) {
 			System.out.println("Enter the number at index " + i+": ");
@@ -21,6 +30,9 @@ public class ArrayDemo {
 			scanner.nextInt();
 		}
 		System.out.println("Computing Final Mark");
+		for(int g=0; g<number;g++) {
+			int sum =
+		}
 	}
 	
 }
