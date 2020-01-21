@@ -12,6 +12,7 @@ public class ArrayDemo {
 		int number =scanner.nextInt();
 		int [] midsem = new int[number];
 		int [] endsem = new int[number];
+		int [] finalmark = new int(number);
 		
 	}
 	
