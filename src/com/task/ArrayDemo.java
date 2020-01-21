@@ -10,6 +10,8 @@ public class ArrayDemo {
 		
 		System.out.println("Enter the number of arrays:");
 		int number =scanner.nextInt();
+		int [] midsem = new int[number];
+		int [] endsem = new int[number];
 		
 	}
 	
