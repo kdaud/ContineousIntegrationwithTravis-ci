@@ -4,6 +4,10 @@ import java.util.Scanner;
 
 public class ArrayDemo {
 	
+	static {
+		System.out.println("Enter the number of arrays:");
+	}
+	
 	private Scanner scanner = new Scanner(System.in);
 	
 	int number = scanner.nextInt();
@@ -14,25 +18,28 @@ public class ArrayDemo {
 	
 	int[] finalmark = new int[number];
 	
-	private void gciover() {
+	protected void gciover() {
 		
 		
-		System.out.println("Enter the number of arrays:");
+
 		
 		System.out.println("Enter the Array Element of the first set:");
+		System.out.println("------------------------");
 		for (int i = 0; i < number; i++) {
 			System.out.println("Enter the number at index " + i+": ");
-			scanner.nextInt();
+			midsem[i] = scanner.nextInt();
 		}
+		System.out.println("-------------------");
 		System.out.println("Next Array Elements");
 		for (int j = 0; j < number; j++) {
 			System.out.println("Enter the number at index " + j + ": ");
-			scanner.nextInt();
+			endsem[j] = scanner.nextInt();
 		}
+		System.out.println("-------------------");
 		System.out.println("Computing Final Mark");
 		for(int g=0; g<number;g++) {
-			int sum = midsem[g]+endsem[g];
-			System.out.println(sum);
+			finalmark[g] = midsem[g] + endsem[g];
+			System.out.print(finalmark[g] + " ");
 		}
 	}
 	
