@@ -31,7 +31,8 @@ public class ArrayDemo {
 		}
 		System.out.println("Computing Final Mark");
 		for(int g=0; g<number;g++) {
-			int sum =
+			int sum = midsem[g]+endsem[g];
+			System.out.println(sum);
 		}
 	}
 	
